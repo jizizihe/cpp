@@ -14,7 +14,7 @@ class Box
 };
 
 // 成员函数定义
-double Box::getWidth(void)
+double Box::getWidth(void)//::是范围解析运算符，在 :: 运算符之前必须使用类名，调用成员函数是在对象上使用点运算符（.）。
 {
 	return width ;
 }
