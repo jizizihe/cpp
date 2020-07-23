@@ -49,9 +49,12 @@ void display(Line obj)
 int main( )
 {
 	Line line(10);
+	Line line2(line);
+	cout << "当用一个对象去初始化同类的另一个对象时，会引发复制构造函数被调用" << endl << endl;
 
 	display(line);
-
+	cout << "为形参的对象，是用复制构造函数初始化的，会引发复制构造函数被调用" << endl << endl;
+	
 	return 0;
 }
 
